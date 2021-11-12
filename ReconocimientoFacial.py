@@ -3,7 +3,7 @@ import os
 import imutils
 
 personName = "David"
-dataPath = "D:/DAVID/UNSA/IV TAREAS/9. labo de AC/propuesta2/Data"
+dataPath = "D:/DAVID/UNSA/IV TAREAS/9. labo de AC/Trabajo_Final_AC/Data"
 personPath = dataPath + "/" + personName
 #print(personPath)
 
