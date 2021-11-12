@@ -2,7 +2,7 @@ import cv2
 import os
 import imutils
 
-personName = "David"
+personName = "Otro"
 dataPath = "D:/DAVID/UNSA/IV TAREAS/9. labo de AC/Trabajo_Final_AC/Data"
 personPath = dataPath + "/" + personName
 #print(personPath)
@@ -11,7 +11,7 @@ if not os.path.exists(personPath):
     print("carpeta creada: ",personPath)
     os.makedirs(personPath)
     
-cap = cv2.VideoCapture("David.mp4")
+cap = cv2.VideoCapture("img y videos/David.mp4")
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 count = 0
