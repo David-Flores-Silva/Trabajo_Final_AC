@@ -31,7 +31,7 @@ class Curso:
         return mostrar + horario + docente + nombres + alumnos 
         
     
-    
+   
 #print(datetime.now().strftime("%H:%M:%S"))
 #hora = datetime.now().strftime("%H:%M:%S").split(sep=":")
 #for hor in hora:
