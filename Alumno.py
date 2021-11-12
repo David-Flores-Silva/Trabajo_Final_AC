@@ -14,8 +14,6 @@ class Alumno:
 a = Alumno(20202132, "David", 18)
 b = Alumno(20202133, "Nicolas", 20)
 
-print(a)
-print(b)
     
    
 
