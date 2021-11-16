@@ -14,7 +14,7 @@ face_recognizer = cv2.face.FisherFaceRecognizer_create()
 face_recognizer.read("modeloFisherFace.xml")
  
 #cap = cv2.VideoCapture("img y videos/David.mp4")
-cap = cv2.VideoCapture("img y videos/Nicolas.mp4")
+cap = cv2.VideoCapture("img y videos/Adriano.mp4")
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
  
 while True:
@@ -32,7 +32,7 @@ while True:
         rostro = cv2.resize(rostro, (150, 150), interpolation = cv2.INTER_CUBIC)
         result = face_recognizer.predict(rostro)
  
-        cv2.putText(frame, "{}".format(result),(x,y+5),1,1.3,(255,255,0),1,cv2.LINE_AA)
+        cv2.putText(frame, "{}".format(result),(x,y-10),1,1.3,(0,255,0),1,cv2.LINE_AA)
  
         #1
         #if result[1] < 5700:
@@ -44,10 +44,10 @@ while True:
     
         #2
         if result[1] < 500:
-            cv2.putText(frame, "{}".format(imagePaths[result[0]]),(x,y+5),1,1.3,(0,255,0),1,cv2.LINE_AA)
-            cv2.rectangle(frame, (x,y), (x+w,y+h), (0, 255, 0), 2)
+            cv2.putText(frame, "{}".format(imagePaths[result[0]]),(x,y-30),1,1.3,(255,198,26),2,cv2.LINE_AA)
+            cv2.rectangle(frame, (x,y), (x+w,y+h), (255,198,26), 2)
         else:
-            cv2.putText(frame, "Desconocido",(x,y+5),1,1.3,(0,0,255),1,cv2.LINE_AA)
+            cv2.putText(frame, "Desconocido",(x,y+-30),1,1.3,(0,0,255),1,cv2.LINE_AA)
             cv2.rectangle(frame, (x,y), (x+w,y+h), (0, 0, 255), 2)
  
  
