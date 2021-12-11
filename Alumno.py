@@ -8,7 +8,8 @@ class Alumno:
         self.video = "img y videos/"+name+".mp4"
         
     def __str__(self):
-        return "CUI: " + str(self.cui) + "\nNAME: " + self.name + "\nAGE: " + str(self.age) + "\nASISTENCIA: " + str(self.asistencia) + "\nVIDEO: [" + self.video + "]\n"
+        #return "CUI: " + str(self.cui) + "\nNAME: " + self.name + "\nAGE: " + str(self.age) + "\nASISTENCIA: " + str(self.asistencia) + "\nVIDEO: [" + self.video + "]\n"+"\n"
+        return "CUI: " + str(self.cui) + "\nNAME: " + self.name + "\nAGE: " + str(self.age) + "\nVIDEO: [" + self.video + "]\n"+"\n"
 
     
     
